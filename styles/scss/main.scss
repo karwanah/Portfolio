@@ -1,0 +1,87 @@
+@font-face {
+    font-family: sofia-pro,sans-serif ;
+    src: url("../../assets/sofiapro-light.otf") format("opentype");
+}
+
+
+body {
+    background: #f5ecec;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.navbar {
+    height: 50px;
+    margin-bottom: 50px;
+    background-color: fff4f4;
+    justify-content: flex-start;
+}
+
+a {
+    font-size: 18px;
+    margin-left: 50px;
+    margin-top: 10px;
+    color: #5b5768d8;
+    text-decoration: none;
+}
+a:hover {
+    color:#212024;
+}
+/* portrait */
+#me {
+    position:relative;
+    left: 100px;
+    width: 400px;
+    height: auto;
+    border-radius: 50%;
+}
+
+
+#intro {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#introtext {
+    font-size: 45px;
+    position: relative;
+    left: 250px;
+}
+
+
+span {
+    border-right: .05em solid;
+    animation: caret 1s steps(1) infinite;
+    }
+@keyframes caret {
+    50% {
+      border-color: transparent;
+    }
+  }
+  @media only screen and (max-width: 800px) {
+      #intro {
+          flex-direction: column;
+      }
+      #introtext {
+          font-size: 20px;
+          top: 100px;
+          left: 50px;
+      }
+      .navbar {
+        flex-flow: column wrap;
+        justify-content: flex-start;
+      }
+      .navbar a {
+          margin-left: 20px;
+          font-size: 16px;
+      } 
+      #me {
+          max-width: 350px;
+      }
+  }
