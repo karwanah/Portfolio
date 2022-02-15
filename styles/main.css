@@ -70,7 +70,6 @@ span {
   #introtext {
     font-size: 20px;
     top: 100px;
-    left: 50px;
   }
 
   .navbar {
@@ -85,6 +84,7 @@ span {
 
   #me {
     max-width: 350px;
+    left: 0px;
   }
 }
 
