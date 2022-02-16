@@ -15,22 +15,32 @@ body {
 }
 
 .navbar {
-  height: 50px;
+  height: 100px;
   margin-bottom: 50px;
-  background-color: fff4f4;
+  background-color: #020202;
   justify-content: flex-start;
 }
 
+#name {
+  font-family: Spartan, sans-serif;
+  font-weight: 1000;
+  margin-left: auto;
+  font-size: 25px;
+  position: relative;
+  right: 30px;
+  color: #4e24e6;
+}
+
 a {
-  font-size: 18px;
+  font-size: 24px;
   margin-left: 50px;
   margin-top: 10px;
-  color: #5b5768d8;
+  color: #ffffffd8;
   text-decoration: none;
 }
 
 a:hover {
-  color: #212024;
+  color: #d8cbff;
 }
 
 /* portrait */
@@ -49,11 +59,54 @@ a:hover {
   align-items: center;
 }
 
-#introtext {
-  font-family: "Sofia Pro";
-  font-size: 45px;
-  position: relative;
+#texdiv {
   left: 250px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+#introtext {
+  margin: 15px 0 30px;
+  font-family: Spartan, sans-serif;
+  font-size: 34px;
+  position: relative;
+  line-height: 50px;
+  font-weight: 700;
+}
+
+#h2tex {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 24px;
+  width: 450px;
+  position: relative;
+  line-height: 35px;
+  font-weight: 200;
+}
+
+#introbutton {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+#introbutton a {
+  margin-left: 0px;
+  align-items: flex-start;
+}
+
+#introbutton button {
+  border-radius: 0;
+  margin-right: 100px;
+}
+
+#bottom {
+  height: 100%;
+  margin-bottom: 0px;
+}
+
+#buttom nav {
+  height: 100%;
 }
 
 span {
@@ -67,30 +120,40 @@ span {
   }
 }
 @media only screen and (max-width: 800px) {
+  #name {
+    font-size: 20px;
+  }
+
   #intro {
     flex-direction: column;
   }
 
+  #texdiv {
+    flex-direction: column;
+    left: 60px;
+  }
+
+  #h2tex {
+    font-size: 18px;
+    max-width: 210px;
+  }
+
   #introtext {
-    font-size: 20px;
-    top: 100px;
+    font-size: 22px;
     left: 0px;
   }
 
-  .navbar {
-    flex-flow: column wrap;
-    align-content: center;
-    align-self: auto;
+  #name {
+    font-size: 10px;
   }
 
   .navbar a {
     margin-left: 10px;
-    font-size: 14px;
+    font-size: 8px;
   }
 
   #me {
-    max-width: 350px;
-    left: 0px;
+    max-width: 250px;
   }
 }
 @media only screen and (max-width: 800px) {
