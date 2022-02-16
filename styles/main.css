@@ -1,6 +1,9 @@
 @font-face {
-  font-family: sofia-pro, sans-serif;
-  src: url("../../assets/sofiapro-light.otf") format("opentype");
+  font-family: "Sofia Pro";
+  src: url("../../assets/SofiaProLight.woff2") format("woff2"), url("../../assets/SofiaProLight.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
 }
 body {
   background: #f5ecec;
@@ -47,6 +50,7 @@ a:hover {
 }
 
 #introtext {
+  font-family: "Sofia Pro";
   font-size: 45px;
   position: relative;
   left: 250px;
@@ -75,16 +79,23 @@ span {
 
   .navbar {
     flex-flow: column wrap;
-    justify-content: flex-start;
+    align-content: center;
+    align-self: auto;
   }
 
   .navbar a {
-    margin-left: 18px;
-    font-size: 16px;
+    margin-left: 10px;
+    font-size: 14px;
   }
 
   #me {
     max-width: 350px;
+    left: 0px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  #me {
+    max-width: 250px;
     left: 0px;
   }
 }
