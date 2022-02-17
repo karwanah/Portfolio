@@ -11,34 +11,35 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
-
+<script src="scripts/text.js"></script>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Vollkorn:400,400italic,700,700italic%7CSpartan:regular,500,600,700%7CNunito+Sans:300,300italic,regular,italic,600,600italic,700" media="all">
+<script>
+    function myFunction(x) {
+  x.classList.toggle("change");
+  $("#navbar").toggleClass("menu-hidden", 800, "easeOutQuint");
+};
+</script>
 </head>
 <body>
     <div id="main">
         <div id="navbar">
-            <nav class="navbar">
-                <a href="#tech">Technologies</a>
+           <!--/--> <nav class="navbar">
+                <a id="name" href="/">Karwan Ahmadi</a>
                 <a href="#projects">My Projects</a>
                 <a href="#about">About Me</a>
                 <a href="#contact">Contact me</a>
-                <a id="name" href="/">Karwan Ahmadi</a>
             </nav>
         </div>
         <div id="intro">
-            <img id="me" src="assets/me.jpeg" alt="">
+            <img id="me" src="assets/me.png" alt="">
             <div id="texdiv">
             <h1 id="introtext">Hello, I'm Karwan</h1>  
-            <h2 id="h2tex"> A self taught developer. </h2>
-            <h2 id="h2tex">Using a range of techonlogies like: &nbsp;&nbsp;&nbsp;   SASS + NodeJs + NextJs + React</h2>
-            <h2 id="h2tex">I've built some amazing projects Check them out down below!</h2>
-            <div id="introbutton">
-            <a href="#projects"><button type="button" class="btn btn-primary">Check them out below</button></a>
-            <a href="#contact"> <button type="button" class="btn btn-success">Contact Me</button></a>
-            </div>        
-        </div>        
-        </div>
-        <div id="tech">
+            <h2 id="text">&nbsp;</h2>
+            <a href="#projects"><button type="button" id="btn1" class="btn btn-primary">My Projects</button></a>
+        </div>       
+    </div>
+        
+    <div id="tech">
             
         </div>
         <div id="projects"></div>
@@ -48,5 +49,6 @@
  
         </div>
     </div>
+
 </body>
 </html>
