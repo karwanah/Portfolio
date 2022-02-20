@@ -5,15 +5,31 @@
   font-style: normal;
   font-display: swap;
 }
+span {
+  border-right: 0.05em solid;
+  animation: caret 1s steps(1) infinite;
+}
+
+@keyframes caret {
+  50% {
+    border-color: transparent;
+  }
+}
+/* Color Variables */
 html body {
   max-width: 100%;
   overflow-x: hidden;
-  background: #ffffff;
+  background: #152E75;
 }
 
 #main {
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+
+#navbar {
+  width: 100%;
 }
 
 .navbar {
@@ -23,10 +39,11 @@ html body {
   justify-content: space-evenly;
 }
 
+/* Name Logo Text */
 #name {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Spartan, sans-serif;
   font-weight: 1000;
-  font-size: 18px;
+  font-size: 20px;
   position: relative;
   color: #fcd2d2;
   margin-right: 180px;
@@ -34,17 +51,17 @@ html body {
 
 a {
   font-size: 24px;
-  margin-left: 50px;
-  margin-top: 10px;
   color: #ffffffd8;
   text-decoration: none;
+  font-family: Spartan, sans-serif;
+  font-weight: 600;
 }
 
 a:hover {
   color: #d8cbff;
 }
 
-/* portrait */
+/* portrait image */
 #me {
   position: relative;
   left: 100px;
@@ -53,8 +70,11 @@ a:hover {
   height: auto;
 }
 
+/* Image and Text */
 #intro {
   display: flex;
+  width: 100%;
+  height: auto;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
@@ -62,27 +82,33 @@ a:hover {
 
 #texdiv {
   left: 250px;
+  align-items: center;
   position: relative;
   display: flex;
   flex-direction: column;
 }
 
+/* Hello text */
 #introtext {
+  color: white;
   margin: 15px 0 30px;
   font-family: Spartan, sans-serif;
   font-size: 34px;
+  font-style: oblique;
   position: relative;
   line-height: 50px;
   font-weight: 700;
 }
 
+/* Animated Text */
 #text {
+  color: white;
   font-family: "Nunito Sans", sans-serif;
   font-size: 24px;
-  width: 450px;
   position: relative;
   line-height: 35px;
   font-weight: 200;
+  text-align: center;
 }
 
 #introbutton {
@@ -109,19 +135,8 @@ a:hover {
   height: 100%;
 }
 
-span {
-  border-right: 0.05em solid;
-  animation: caret 1s steps(1) infinite;
-}
-
-@keyframes caret {
-  50% {
-    border-color: transparent;
-  }
-}
 @media only screen and (max-width: 750px) {
   #name {
-    margin-left: 12px;
     font-size: 20px;
   }
 
@@ -153,9 +168,7 @@ span {
   }
 
   .navbar a {
-    margin-top: -50px;
-    margin-left: 12px;
-    font-size: 20px;
+    font-size: 16px;
   }
 
   #me {
@@ -167,10 +180,11 @@ span {
   font-size: 24px;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1000px) {
   #name {
-    font-size: 12px;
-    visibility: hidden;
+    font-size: 0px;
+    display: none;
+    margin-right: 0px;
   }
 }
 @media only screen and (max-width: 700px) {
@@ -180,7 +194,7 @@ span {
   }
 
   #btn1 {
-    font-size: 10px;
+    font-size: 16px;
   }
 }
 #tech {
@@ -189,7 +203,7 @@ span {
 
 @media only screen and (min-width: 1600px) {
   #me {
-    width: 600px;
+    width: 550px;
   }
 
   #introtext {
@@ -199,7 +213,7 @@ span {
   #text {
     font-size: 40px;
     margin-bottom: 50px;
-    margin-top: 20px;
+    margin-top: 40px;
   }
 }
 
