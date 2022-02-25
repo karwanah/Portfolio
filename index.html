@@ -11,40 +11,65 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+<link href="http://fonts.cdnfonts.com/css/sofia-pro" rel="stylesheet">
 <script src="scripts/text.js"></script>
+
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Vollkorn:400,400italic,700,700italic%7CSpartan:regular,500,600,700%7CNunito+Sans:300,300italic,regular,italic,600,600italic,700" media="all">
 </head>
 <body>
     <div id="main">
         <div id="navbar">
-           <!--/--> <nav class="navbar">
-                <a id="name" href="/">Karwan Ahmadi</a>
-                <a href="#projects">My Projects</a>
-                <a href="#about">About Me</a>
-                <a href="#contact">Contact me</a>
-            </nav>
+            <div class="container-wide">
+               <nav>
+                <a href="#services">Services</a>
+                <a href="#projects">Projects</a>
+                <a href="#about">Tech</a>
+                <a href="#contact">Contact</a>
+               </nav>
+            </div>
         </div>
-        <div id="intro">
-            <img id="me" src="assets/me.png" alt="">
-            <div id="texdiv">
-            <h1 id="introtext">Hello, I'm Karwan</h1>  
-            <h2 id="text">&nbsp;</h2>
+<div id="intro">
+
+        <div class="container-wide">
+            <div class="header">
+                <div class="column-left">
+                    <div class="divt">
+                <h1 id="introtext">Hello, I'm Karwan</h1>  
+                <h2 id="text">&nbsp;</h2>
+            <a href="#projects"><button style="color: #fff; background-color: blue;" type="button" id="btn1" class="btn btn-primary">My Work</button></a>
+            <a href="#contact"><button type="button" id="btn1" class="btn btn-primary">Lets Talk</button></a>
+            </div>
+        </div>
+                <div class="column-right">
+                <img id="me" src="assets/me.png" alt="">
+            </div>
+    
             
-            <div id="buttonp"><a href="#projects"><button type="button" id="btn1" class="btn btn-primary">My Projects</button></a></div>
+</div>
+
+            
         </div>
 
              
-    </div>
-      
-    <div id="h1text">
-    <h1>My Projects</h1></div>
+</div>
         <div id="projects">
             <div id="projectbox">
-                <div class="card" style="width: 200px;">
+                <div class="card">
                     <img class="card-img-top" src="assets/me.png" alt="Card image cap">
                     <div class="card-body">
                     </div>
                   </div>
+                  <div class="card">
+                    <img class="card-img-top" src="assets/me.png" alt="Card image cap">
+                    <div class="card-body">
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img class="card-img-top" src="assets/me.png" alt="Card image cap">
+                    <div class="card-body">
+                    </div>
+                  </div>
+                  
             </div>
         </div>
         <div id="h1text">
@@ -58,10 +83,20 @@
             </div>
         </div>
         <div id="about"></div>
-        <div id="contact"></div>
+        <div id="contact">
+            <div class="container-wide">
+                <form action="">
+                    <input placeholder="Your Name"  type="text">
+                    <input placeholder="Email" type="text">
+                    <input placeholder="Phone Number" type="text" pattern="\d*">
+                    <textarea placeholder="Message" type="text"></textarea>
+                </form>
+            </div>
+        </div>
         <div id="bottom">
             <a href="https://github.com/karwanah"><img src="assets/icons/git.svg" alt=""></a>
             <a href="https://www.linkedin.com/in/karwan-ahmadi-7a3218225/"><img src="assets/icons/linkedin.svg" alt=""></a>
+            <a href="https://www.freecodecamp.org/karwanah"><img src="assets/icons/fcc.svg" alt=""></a>
         </div>
  
         </div>
