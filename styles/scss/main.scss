@@ -49,6 +49,9 @@ html body {
     float: right;
 }
 
+::placeholder {
+    opacity: 0.5;
+}
 
 .header {
     margin-top: 100px;
@@ -78,20 +81,7 @@ nav {
     color: #6e6d7a;
 }
 
-@media only screen and (max-width: 479px) {
-    #navbar a {
-        font-size: 16px;
-    }
-    .column-left {
-        width: unset;
-    }
-    .column-right {
-        width: unset;
-    }
-    .header {
-        flex-direction: column;
-    }
-}
+
 
 
 /* Name Logo Text */
@@ -279,11 +269,12 @@ a {
         left: 0px;
     }
     #text {
-        font-size: 14px;
-        width: 200px;
+        font-size: 18px;
+        margin: 30px 0;
+        width: auto;
     }
       #introtext {
-          font-size: 22px;
+          font-size: 18px;
           left: 0px;
       }
       #name {
@@ -296,6 +287,10 @@ a {
       #h1text h1 {
           font-size: 14px;
       }
+      .divt {
+        text-align: center;
+    
+    }
   }
 
   #btn1 {
@@ -326,6 +321,8 @@ a {
   @media only screen and (max-width: 800px) {
     #btn1 {
         font-size: 16px;
+        margin-left: 12px;
+        margin-right: 12px;
     }
     #box img {
         height: 50px;
@@ -340,7 +337,6 @@ a {
 }
 
 #contact {
-    background-color: rgba(233, 225, 225, 0.815);
     height: auto;
     margin-top: 30px;
     margin-bottom: 30px;
@@ -358,13 +354,11 @@ form {
 }
 
 input {
-    width: 500px;
-    max-width: 500px;
-    margin-right: 0;
+    width: 350px;
     margin-bottom: 24px;
     padding: 24px 20px;
     border-color: rgba(0,0,0,.1);
-    border-radius: 5px;
+    border-radius: 50px;
     color: #5c5b66;
     font-size: 16px;
     line-height: 25px;
@@ -372,17 +366,53 @@ input {
 }
 
 textarea {
-    width: 500px;
-    max-width: 500px;
-    min-height: 128px;
+    width: 350px;
+    min-height: 256px;
     margin-left: auto;
     padding-top: 10px;
     padding-right: 20px;
     padding-left: 20px;
-    border: 1px solid rgba(0,0,0,.1);
-    border-radius: 5px;
+    border: 2px solid rgba(0,0,0,.1);
+    border-radius: 25px;
     color: #5c5b66;
     font-size: 16px;
     line-height: 25px;
     text-align: left;
+}
+
+
+@media only screen and (max-width: 479px) {
+    nav {
+        float: unset;
+        text-align: center;
+    }
+    #navbar a {
+        font-size: 16px;
+        margin: 8px;
+    }
+    .column-left {
+        width: unset;
+    }
+    .column-right {
+        width: unset;
+    }
+    .header {
+        flex-direction: column;
+    }
+    form{
+        margin: unset;
+    }
+    #contact {
+        display: unset;
+    }
+
+    textarea {
+        width: 250px;
+        text-align: center;
+    }
+    input {
+        width: 250px;
+        text-align: center;
+    }
+
 }

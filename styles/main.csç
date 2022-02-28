@@ -16,10 +16,24 @@ span {
   }
 }
 /* Color Variables */
-html body {
-  max-width: 100%;
+.body {
+  margin: 0;
+  min-height: 100%;
+  background-color: #fff;
+  font-family: Vollkorn, serif;
+  color: #333;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+body {
+  min-height: 100%;
   overflow-x: hidden;
   background: #fff;
+  color: #1f1f1f;
+  font-size: 18px;
+  line-height: 30px;
+  cursor: default;
 }
 
 .container-wide {
@@ -44,8 +58,29 @@ html body {
   float: right;
 }
 
-::placeholder {
-  opacity: 0.5;
+@media screen and (max-width: 479px) {
+  .container-wide {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+}
+@media screen and (max-width: 479px) {
+  .header {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+
+  .h2b {
+    font-size: 20px;
+  }
+}
+.h2b {
+  font-size: 32px;
+  font-family: "Sofia Pro";
+  line-height: 2;
+  width: 450px;
+  padding-top: 50px;
 }
 
 .header {
@@ -76,6 +111,23 @@ nav {
   color: #6e6d7a;
 }
 
+@media only screen and (max-width: 479px) {
+  #navbar a {
+    font-size: 16px;
+  }
+
+  .column-left {
+    width: unset;
+  }
+
+  .column-right {
+    width: unset;
+  }
+
+  .header {
+    flex-direction: column;
+  }
+}
 /* Name Logo Text */
 a {
   font-size: 18px;
@@ -136,7 +188,7 @@ a {
   margin-right: 100px;
 }
 
-#bottom {
+#footer {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -146,16 +198,16 @@ a {
   margin-top: 100px;
 }
 
-#bottom a {
+#footer a {
   margin: 20px;
   width: 50px;
 }
 
-#bottom img {
+#footer img {
   width: 50px;
 }
 
-#buttom nav {
+#footer nav {
   height: 100%;
 }
 
@@ -179,11 +231,7 @@ a {
 #projects {
   margin-top: 100px;
   margin-bottom: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  width: 100%;
-  height: 600px;
+  height: auto;
   background: #f6f5ff;
 }
 
@@ -202,15 +250,18 @@ a {
 }
 
 #projectbox {
-  width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
-.card {
-  margin: 10px;
+.img {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  height: 400px;
   max-width: 300px;
+  border-radius: 30px;
+  object-fit: cover;
 }
 
 #box img {
@@ -246,13 +297,12 @@ a {
   }
 
   #text {
-    font-size: 18px;
-    margin: 30px 0;
-    width: auto;
+    font-size: 28px;
+    width: 300px;
   }
 
   #introtext {
-    font-size: 18px;
+    font-size: 22px;
     left: 0px;
   }
 
@@ -266,10 +316,6 @@ a {
 
   #h1text h1 {
     font-size: 14px;
-  }
-
-  .divt {
-    text-align: center;
   }
 }
 #btn1 {
@@ -300,8 +346,6 @@ a {
 @media only screen and (max-width: 800px) {
   #btn1 {
     font-size: 16px;
-    margin-left: 12px;
-    margin-right: 12px;
   }
 
   #box img {
@@ -315,12 +359,10 @@ a {
   }
 }
 #contact {
-  height: auto;
+  background-color: #fff4f4;
+  height: inherit;
   margin-top: 30px;
   margin-bottom: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 form {
@@ -332,11 +374,13 @@ form {
 }
 
 input {
-  width: 350px;
+  width: 500px;
+  max-width: 500px;
+  margin-right: 0;
   margin-bottom: 24px;
   padding: 24px 20px;
   border-color: rgba(0, 0, 0, 0.1);
-  border-radius: 50px;
+  border-radius: 5px;
   color: #5c5b66;
   font-size: 16px;
   line-height: 25px;
@@ -344,60 +388,19 @@ input {
 }
 
 textarea {
-  width: 350px;
-  min-height: 256px;
+  width: 500px;
+  max-width: 500px;
+  min-height: 128px;
   margin-left: auto;
   padding-top: 10px;
   padding-right: 20px;
   padding-left: 20px;
-  border: 2px solid rgba(0, 0, 0, 0.1);
-  border-radius: 25px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
   color: #5c5b66;
   font-size: 16px;
   line-height: 25px;
   text-align: left;
 }
 
-@media only screen and (max-width: 479px) {
-  nav {
-    float: unset;
-    text-align: center;
-  }
-
-  #navbar a {
-    font-size: 16px;
-    margin: 8px;
-  }
-
-  .column-left {
-    width: unset;
-  }
-
-  .column-right {
-    width: unset;
-  }
-
-  .header {
-    flex-direction: column;
-  }
-
-  form {
-    margin: unset;
-  }
-
-  #contact {
-    display: unset;
-  }
-
-  textarea {
-    width: 250px;
-    text-align: center;
-  }
-
-  input {
-    width: 250px;
-    text-align: center;
-  }
-}
-
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=main.cs%C3%A7.map */

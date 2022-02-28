@@ -12,7 +12,6 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
 <link href="http://fonts.cdnfonts.com/css/sofia-pro" rel="stylesheet">
-<script src="scripts/text.js"></script>
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Vollkorn:400,400italic,700,700italic%7CSpartan:regular,500,600,700%7CNunito+Sans:300,300italic,regular,italic,600,600italic,700" media="all">
 </head>
@@ -35,7 +34,9 @@
                 <div class="column-left">
                     <div class="divt">
                 <h1 id="introtext">Hello, I'm Karwan</h1>  
-                <h2 id="text">&nbsp;</h2>
+                <h2 id="text">
+                    I'm a self taught developer specializing in technologies like SASS, NodeJs, NextJs, React.
+                </h2>
             <a href="#projects"><button style="color: #fff; background-color: blue;" type="button" id="btn1" class="btn btn-primary">My Work</button></a>
             <a href="#contact"><button type="button" id="btn1" class="btn btn-primary">Lets Talk</button></a>
             </div>
@@ -85,12 +86,15 @@
         <div id="about"></div>
         <div id="contact">
             <div class="container-wide">
-                <form action="">
-                    <input placeholder="Your Name"  type="text">
-                    <input placeholder="Email" type="text">
-                    <input placeholder="Phone Number" type="text" pattern="\d*">
-                    <textarea placeholder="Message" type="text"></textarea>
-                </form>
+                <div class="header" style="margin-top: unset;">
+                    <form action="submit">
+                        <input placeholder="Your Name"  type="text">
+                        <input placeholder="Email" type="text">
+                        <input placeholder="Phone Number" type="text" pattern="\d*">
+                        <textarea placeholder="Message" type="text"></textarea>
+                        <button style="color: #fff; background-color: rgb(132, 0, 255); text-align: center;" type="button" id="btn1" class="btn btn-primary">Send</button>
+                    </form>
+                </div>
             </div>
         </div>
         <div id="bottom">
