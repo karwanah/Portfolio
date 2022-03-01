@@ -269,12 +269,16 @@ a {
         left: 0px;
     }
     #text {
-        font-size: 18px;
+        font-size: 28px;
+        line-height: 36px;
+        font-weight: 600;
         margin: 30px 0;
         width: auto;
     }
       #introtext {
-          font-size: 18px;
+          font-size: 24px;
+          line-height: 28px;
+          font-weight: 500;
           left: 0px;
       }
       #name {
@@ -288,7 +292,7 @@ a {
           font-size: 14px;
       }
       .divt {
-        text-align: center;
+        text-align: left;
     
     }
   }
@@ -296,14 +300,15 @@ a {
   #btn1 {
     margin-top: 40px;
     margin-right: 24px;
-    padding: 0 24px;
+    padding: 0 70px;
     border: 1px solid rgba(255,125,89,.2);
     border-radius: 5px;
     background-color: #fff;
-    box-shadow: 6px 6px 30px 4px rgb(255 125 89 / 2%), 3px 3px 15px 2px rgb(255 125 89 / 3%), 2px 2px 8px 1px rgb(255 125 89 / 2%);
-    -webkit-transition: box-shadow .2s ease-in-out,-webkit-transform .2s ease-in-out;
-    transition: box-shadow .2s ease-in-out,transform .2s ease-in-out,-webkit-transform .2s ease-in-out;
-    color: #ff7d59;
+    background-image: -webkit-gradient(linear,left top,right top,from(#ff8d4d),to(#f4494e));
+    background-image: linear-gradient(90deg,#ff8d4d,#f4494e);
+    box-shadow: 1px 1px 8px 1px rgb(0 0 0 / 2%), 3px 3px 15px 2px rgb(0 0 0 / 4%), 6px 6px 20px 4px rgb(0 0 0 / 5%);
+    -webkit-transition: box-shadow .2s ease-in-out,color .2s ease-in-out,opacity .2s ease-in-out;
+    transition: box-shadow .2s ease-in-out,color .2s ease-in-out,opacity .2s ease-in-out;
     font-size: 16px;
     line-height: 48px;
     font-weight: 600;
@@ -346,26 +351,37 @@ a {
 }
 
 form {
-    margin: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-input {
-    width: 350px;
+    max-width: 500px;
+    margin-right: 0;
     margin-bottom: 24px;
+    margin-left: auto;
     padding: 24px 20px;
     border-color: rgba(0,0,0,.1);
-    border-radius: 50px;
+    border-radius: 5px;
     color: #5c5b66;
     font-size: 16px;
     line-height: 25px;
     text-align: left;
 }
 
+input {
+    display: block;
+    width: 100%;
+    width: 350px;
+    margin-bottom: 24px;
+    padding: 24px 20px;
+    border-color: rgba(0,0,0,.1);
+    border-radius: 5px;
+    color: #5c5b66;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: left;
+    
+}
+
 textarea {
+    display: block;
+    width: 100%;
     width: 350px;
     min-height: 256px;
     margin-left: auto;
@@ -373,7 +389,7 @@ textarea {
     padding-right: 20px;
     padding-left: 20px;
     border: 2px solid rgba(0,0,0,.1);
-    border-radius: 25px;
+    border-radius: 5px;
     color: #5c5b66;
     font-size: 16px;
     line-height: 25px;
@@ -391,13 +407,15 @@ textarea {
         margin: 8px;
     }
     .column-left {
-        width: unset;
+        width: 100%;
     }
     .column-right {
         width: unset;
+        width: 100%;
     }
     .header {
         flex-direction: column;
+        margin-top: 30px;
     }
     form{
         margin: unset;
@@ -406,13 +424,13 @@ textarea {
         display: unset;
     }
 
-    textarea {
+    textarea input {
         width: 250px;
         text-align: center;
     }
-    input {
-        width: 250px;
-        text-align: center;
+    .container-wide{
+        padding-right: 16px;
+        padding-left: 16px;
     }
 
 }

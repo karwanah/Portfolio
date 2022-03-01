@@ -247,8 +247,7 @@ a {
 
   #text {
     font-size: 28px;
-    line-height: 36px;
-    font-weight: 600;
+    line-height: 600;
     margin: 30px 0;
     width: auto;
   }
@@ -256,7 +255,6 @@ a {
   #introtext {
     font-size: 24px;
     line-height: 28px;
-    font-weight: 500;
     left: 0px;
   }
 
@@ -279,15 +277,14 @@ a {
 #btn1 {
   margin-top: 40px;
   margin-right: 24px;
-  padding: 0 70px;
+  padding: 0 24px;
   border: 1px solid rgba(255, 125, 89, 0.2);
   border-radius: 5px;
   background-color: #fff;
-  background-image: -webkit-gradient(linear, left top, right top, from(#ff8d4d), to(#f4494e));
-  background-image: linear-gradient(90deg, #ff8d4d, #f4494e);
-  box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.02), 3px 3px 15px 2px rgba(0, 0, 0, 0.04), 6px 6px 20px 4px rgba(0, 0, 0, 0.05);
-  -webkit-transition: box-shadow 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.2s ease-in-out;
-  transition: box-shadow 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.2s ease-in-out;
+  box-shadow: 6px 6px 30px 4px rgba(255, 125, 89, 0.02), 3px 3px 15px 2px rgba(255, 125, 89, 0.03), 2px 2px 8px 1px rgba(255, 125, 89, 0.02);
+  -webkit-transition: box-shadow 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+  color: #ff7d59;
   font-size: 16px;
   line-height: 48px;
   font-weight: 600;
@@ -329,27 +326,19 @@ a {
 }
 
 form {
-  max-width: 500px;
-  margin-right: 0;
-  margin-bottom: 24px;
-  margin-left: auto;
-  padding: 24px 20px;
-  border-color: rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
-  color: #5c5b66;
-  font-size: 16px;
-  line-height: 25px;
-  text-align: left;
+  margin: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 input {
-  display: block;
-  width: 100%;
   width: 350px;
   margin-bottom: 24px;
   padding: 24px 20px;
   border-color: rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
+  border-radius: 50px;
   color: #5c5b66;
   font-size: 16px;
   line-height: 25px;
@@ -357,8 +346,6 @@ input {
 }
 
 textarea {
-  display: block;
-  width: 100%;
   width: 350px;
   min-height: 256px;
   margin-left: auto;
@@ -366,7 +353,7 @@ textarea {
   padding-right: 20px;
   padding-left: 20px;
   border: 2px solid rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
+  border-radius: 25px;
   color: #5c5b66;
   font-size: 16px;
   line-height: 25px;
@@ -385,17 +372,15 @@ textarea {
   }
 
   .column-left {
-    width: 100%;
+    width: unset;
   }
 
   .column-right {
     width: unset;
-    width: 100%;
   }
 
   .header {
     flex-direction: column;
-    margin-top: 30px;
   }
 
   form {
@@ -406,15 +391,15 @@ textarea {
     display: unset;
   }
 
-  textarea input {
+  textarea {
     width: 250px;
     text-align: center;
   }
 
-  .container-wide {
-    padding-right: 16px;
-    padding-left: 16px;
+  input {
+    width: 250px;
+    text-align: center;
   }
 }
 
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=main.cs.map */
