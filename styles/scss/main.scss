@@ -300,7 +300,7 @@ a {
   #btn1 {
     margin-top: 40px;
     margin-right: 24px;
-    padding: 0 70px;
+    padding: 0 30px;
     border: 1px solid rgba(255,125,89,.2);
     border-radius: 5px;
     background-color: #fff;
@@ -400,6 +400,10 @@ textarea {
 @media only screen and (max-width: 479px) {
     nav {
         float: unset;
+        text-align: center;
+    }
+
+    #topbutton {
         text-align: center;
     }
     #navbar a {
