@@ -88,6 +88,7 @@ a {
 #me {
   width: 350px;
   height: auto;
+  border-radius:100%;
 }
 
 /* Image and Text */
