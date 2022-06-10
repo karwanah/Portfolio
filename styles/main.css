@@ -75,6 +75,8 @@ nav {
 #navbar a {
   margin-left: 40px;
   color: #6e6d7a;
+  font-family: 'Sofia Pro', sans-serif;
+  font-size: 30px;
 }
 
 /* Name Logo Text */
