@@ -141,11 +141,13 @@ a {
 #bottom {
   display: flex;
   align-items: center;
+  flex-direction: column;
   justify-content: center;
   width: 100%;
   background: #fff;
   height: 150px;
-  margin-top: 100px;
+  margin-bottom: 20px;
+
 }
 
 #bottom a {
@@ -203,6 +205,9 @@ a {
   font-size: 24px;
 }
 
+#projects{
+  background: #0079ff;
+}
 #projectbox {
   width: 100%;
   display: flex;
@@ -211,9 +216,29 @@ a {
 }
 
 .card {
-  margin: 10px;
-  max-width: 300px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
+@media only screen and (max-width: 750px) {
+ .card {
+   margin-left: 5px;
+   margin-right: 5px;
+ }
+ .card-body{
+   padding: 0.5rem;
+ }
+ 
+}
+
+.card-img-top {
+  max-width: 200px;
+}
+
+@media only screen and (max-width: 750px) {
+  .card-img-top{
+    max-width: 100px;
+    } 
+  }
 
 #box img {
   height: 100px;
@@ -344,7 +369,7 @@ form {
   color: #5c5b66;
   font-size: 16px;
   line-height: 25px;
-  text-align: left;
+  text-align: center;
 }
 
 input {
@@ -424,6 +449,10 @@ textarea {
     padding-right: 16px;
     padding-left: 16px;
   }
+}
+
+#socialstext{
+  font-family: "Sofia Pro", sans-serif;
 }
 
 /*# sourceMappingURL=main.css.map */

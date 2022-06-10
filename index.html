@@ -60,21 +60,21 @@
         <div id="projects">
             <div id="projectbox">
                 <div class="card">
-                    <img class="card-img-top" src="assets/me.png" alt="Card image cap">
                     <div class="card-body">
+                        <a href="https://github.com/karwanah/Kjor"><img class="card-img-top" src="assets/Kjor.png" alt="Card image cap"></a>
                     </div>
-                  </div>
-                  <div class="card">
-                    <img class="card-img-top" src="assets/me.png" alt="Card image cap">
-                    <div class="card-body">
                     </div>
-                  </div>
-                  <div class="card">
-                    <img class="card-img-top" src="assets/me.png" alt="Card image cap">
-                    <div class="card-body">
-                    </div>
-                  </div>
-                  
+                    <div class="card">
+                        <div class="card-body">
+                            <a href="/TaxCalc/"><img class="card-img-top" src="assets/TaxCalc.png" alt="Card image cap"></a>
+                        </div>
+                     </div>
+                     <div class="card">
+                        <div class="card-body">
+                            <img class="card-img-top" src="assets/Kjor.png" alt="Card image cap">
+                        </div>
+                        </div>
+                </div>
             </div>
         </div>
         <div id="h1text">
@@ -90,24 +90,53 @@
         <div id="about"></div>
         <div id="contact">
             <div class="container-wide">
-                <div class="header" style="margin-top: unset;">
-                    <form action="submit">
-                        <input placeholder="Your Name"  type="text">
-                        <input placeholder="Email" type="text">
-                        <input placeholder="Phone Number" type="text" pattern="\d*">
-                        <textarea placeholder="Message" type="text"></textarea>
-                        <div class="buttons" style="text-align: center;">
-                            <button style="color: #fff; background-color: rgb(132, 0, 255); text-align: center;" type="button" id="btn1" class="btn btn-primary">Send</button>
-                        </div>
-                    </form>
+                <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+<script>
+  /* paste this line in verbatim */
+  window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
+  /* customize formbutton below*/     
+  formbutton("create", {
+    action: "https://formspree.io/f/xjvlzopk",
+    title: "Lets Talk!",
+    fields: [
+      { 
+        type: "email", 
+        label: "Email:", 
+        name: "email",
+        required: true,
+        placeholder: "your@email.com"
+      },
+      {
+        type: "textarea",
+        label: "Message:",
+        name: "message",
+        placeholder: "What can i help with?",
+      },
+      { type: "submit" }      
+    ],
+    styles: {
+      title: {
+        backgroundColor: "blue"
+      },
+      button: {
+        backgroundColor: "blue"
+      }
+    }
+  });
+</script>
                 </div>
             </div>
         </div>
         <div id="bottom">
+            <div id="socials" style="display: flex; align-items: center; ">
+                <h1 id="socialstext" style="text-align: center; margin-bottom: 30px;">My Socials</h1>
+            </div>
+        <div style="flex-direction:row;">
             <a href="https://github.com/karwanah"><img src="assets/icons/git.svg" alt=""></a>
             <a href="https://www.linkedin.com/in/karwan-ahmadi-7a3218225/"><img src="assets/icons/linkedin.svg" alt=""></a>
             <a href="https://www.freecodecamp.org/karwanah"><img src="assets/icons/fcc.svg" alt=""></a>
-        </div>
+        </div>    
+    </div>
  
         </div>
     </div>
