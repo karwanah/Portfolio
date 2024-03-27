@@ -90,7 +90,7 @@ a {
 /* portrait image */
 #me {
   width: 350px;
-  border-radius:100%;
+  border-radius:20%;
   height: auto;
 }
 
@@ -347,7 +347,7 @@ a {
 @media only screen and (max-width: 1000px) {
   #me {
     width:250px;
-    margin-top:100px;
+    margin-top:50px;
     bottom: 0px;
   }
 }
